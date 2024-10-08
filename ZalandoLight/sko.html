@@ -7,7 +7,8 @@
     <title>Zalando Ligth | Forside</title>
     </head>
     <body>
-        <header id="topp">
+        <div id="grid-container">
+        <header id="global-header">
             <a href="index.html"><img id="main-logo" src="img/Zalando-Logo.png" alt="Nettsted logo"></a>
             <nav class="flex-space-b">
                 <ul class="flex-menu">
@@ -22,21 +23,14 @@
                     <li><a href="#">Outlet</a></li>
                 </ul>
                 <form>
+                <section>
                     <label for=search>Søk</label>
                     <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
                     <input type="submit" value="søk">
                 </form>
             </nav>
         </header>
-        <main>
-            <nav>
-                <ul>
-                    <li> <a href="#">Dame ></a></li>
-                    <li>Sko</li>
-                </ul>
-            </nav>
-            <h1>Sko til dame</h1>
-            <aside>
+            <aside id="category-menu">
                 <nav>
                     <ul>
                         <li>
@@ -51,6 +45,15 @@
                     </ul>
                 </nav>
             </aside>
+        <main>
+            <nav>
+                <ul>
+                    <li> <a href="#">Dame ></a></li>
+                    <li>Sko</li>
+                </ul>
+            </nav>
+            <h1>Sko til dame</h1>
+
             <section>
                 <h2>Produkter</h2>
                 <form>
@@ -66,56 +69,50 @@
                         <option value="high">Høyeste pris</option>
                     </select>
                 </form>
-                <section>
-                    <article>
+                <section class="flex-space-b">
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="adidas Originals CAMPUS 00S">
                         <a href="#">adidas Originals</a>
                         <a href="#"><h3>CAMPUS 00s</h3></a>
                         <p>1345 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="adidas Originals CAMPUS 00S">
                         <a href="#">adidas Originals</a>
                         <a href="#"><h3>CAMPUS 00s</h3></a>
                         <p>1345 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="adidas Originals CAMPUS 00S">
                         <a href="#">adidas Originals</a>
                         <a href="#"><h3>CAMPUS 00s</h3></a>
                         <p>1345 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="adidas Originals CAMPUS 00S">
                         <a href="#">adidas Originals</a>
                         <a href="#"><h3>CAMPUS 00s</h3></a>
                         <p>1345 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="adidas Originals CAMPUS 00S">
                         <a href="#">adidas Originals</a>
                         <a href="#"><h3>CAMPUS 00s</h3></a>
                         <p>1345 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="adidas Originals CAMPUS 00S">
                         <a href="#">adidas Originals</a>
                         <a href="#"><h3>CAMPUS 00s</h3></a>
                         <p>1345 kr</p>
                     </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="adidas Originals CAMPUS 00S">
                         <a href="#">adidas Originals</a>
                         <a href="#"><h3>CAMPUS 00s</h3></a>
                         <p>1345 kr</p>
                     </article>
-                    <article>
-                        <img src="img/produktbilde.webp" alt="adidas Originals CAMPUS 00S">
-                        <a href="#">adidas Originals</a>
-                        <a href="#"><h3>CAMPUS 00s</h3></a>
-                        <p>1345 kr</p>
-                    </article>
-                    <article>
+                    <article class="product-card">
                         <img src="img/produktbilde.webp" alt="adidas Originals CAMPUS 00S">
                         <a href="#">adidas Originals</a>
                         <a href="#"><h3>CAMPUS 00s</h3></a>
@@ -123,10 +120,10 @@
                     </article>
                 </section>
             </section>
+        </div>
         </main>
-        <footer id="bunn">
+        <footer>
             <p>Zalando Light 2024</p>
-            <a href="#topp">Tilbake opp</a>
             </footer>
     </body>
 </html>
