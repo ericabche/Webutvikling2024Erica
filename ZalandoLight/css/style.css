@@ -1,13 +1,13 @@
 html {
-  font-size: 18px; /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet */
+  font-size: calc(1em + 1vw);
 }
 
 * {
-  box-sizing: border-box; /* Inkluderer padding og border i elementets totale bredde og høyde */
+  box-sizing: border-box; 
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; /* Setter fontfamilien til Arial, med fallback til Helvetica og sans-serif */
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 #grid-container{
@@ -18,20 +18,39 @@ body {
 
 }
 
+h1{font-size: 2rem;}
+h2{font-size: 1.8rem;}
+h3{font-size: 1.6rem;}
+h4{font-size: 1.4rem;}
+p, a{font-size: 1rem;}
+
+
+
 #global-header{
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row: 1 / 2;  
-  /*grid-column: 1 / 4;*/
 }
 
 #banner{
   display: flex;
   flex-wrap: wrap;
+  background-color: #efefef;
+  justify-content: space-between;
 
   img{
       max-width: 70%;
   }
+}
+
+
+#banner div{
+  width: 30%;
+  padding: 2rem;
+}
+
+#banner div h2{
+  font-size: 1rem;
 }
 
 main{
@@ -72,62 +91,61 @@ footer{
 }
 
 img {
-  width: 100%; /* Bildet tar opp 100% av containerens bredde */
-  max-width: 400px; /* Setter en maksimal bredde på 400px for bilder */
+  width: 100%; 
+  max-width: 400px; 
 }
 
 #main-logo {
-  width: 100%; /* Logoen tar opp 100% av containerens bredde */
-  max-width: 250px; /* Maksimal bredde på logoen er satt til 250px */
-  display: block; /* Gjør logoen til et blokk-element */
-  margin: 0px auto; /* Sentrerer logoen horisontalt */
+  width: 100%; 
+  max-width: 250px; 
+  display: block; 
+  margin: 0px auto; 
 }
 
 .flex-menu {
-  display: flex; /* Bruker flexbox for å arrangere elementene i menyen */
-  list-style: none; /* Fjerner punktmerking fra listeelementene */
-  gap: 1rem; /* Legger til et gap på 1rem mellom meny-elementene */
-  padding: 0; /* Fjerner standard padding fra listen */
-  margin: 0; /* Fjerner standard margin fra listen */
-  flex-wrap: wrap; /* Tillater at elementene brytes til neste rad hvis det ikke er nok plass */
+  display: flex; 
+  list-style: none; 
+  gap: 1rem; 
+  padding: 0; 
+  margin: 0;
+  flex-wrap: wrap; 
 }
 
 .flex-menu a {
-  text-decoration: none; /* Fjerner understreking fra lenkene */
-  color: #000; /* Setter fargen på lenkene til svart */
+  text-decoration: none; 
+  color: #000; 
 }
 
 .flex-space-b {
-  display: flex; /* Bruker flexbox for layout */
-  justify-content: space-between; /* Fordeler elementene jevnt med plass mellom dem */
-  flex-wrap: wrap; /* Tillater at elementene brytes til neste rad hvis det er nødvendig */
-  gap: 1rem; /* Legger til et gap på 1rem mellom elementene */
+  display: flex; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
 }
 
 .flex-space-b h2 {
-  width: 100%; /* Setter overskriften til å ta opp 100% av containerens bredde */
+  width: 100%; 
 }
 
 .flex-space-b form {
-  position: relative; /* Gjør skjemaet relativt plassert for fleksibel posisjonering av indre elementer */
+  position: relative; 
 }
 
 .flex-space-b form label {
-  visibility: hidden; /* Skjuler etiketten visuelt, men beholder den for tilgjengelighet */
-  position: absolute; /* Posisjonerer etiketten absolutt i forhold til skjemaet */
+  visibility: hidden; 
+  position: absolute; 
 }
 
 #outlet {
-  color: #ff0000; /* Setter teksten til elementet med ID 'outlet' til rød farge */
+  color: #ff0000; 
 }
 
 .product-card {
-  max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
-  min-width: 200px; /* Minimum bredde for produktkortet er 200px */
-  width: 100%; /* Produktkortet tar opp 100% av sin container */
-  box-shadow: 13px 9px 20px 0px #efefef; /* Legger til en boks-skygge for dybdeeffekt */
-  border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
-  padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+  max-width: 350px; 
+  min-width: 200px;
+  width: 100%; 
+  box-shadow: 13px 9px 20px 0px #efefef; 
+  border-radius: 4px; 
+  padding: 1rem; 
 }
 
 /*DESKTOP*/
@@ -140,6 +158,9 @@ img {
   #menu{
     display: flex !important;
   }
+
+  h3{font-size: 1.4rem;}
+  p, a{font-size: 0.6rem;}
 
 }
 
